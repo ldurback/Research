@@ -69,37 +69,46 @@ Given the number 1 as being a special direction that commutes with everything an
 Given the general form of a polynomial, I should be able to code up Newton's Method and prove that this all works.  Use general expression trees or an interative approach (autodifferentiation) to building functions
 
 ```
-linear(x) {
-  return a*x + b;
+f(x) {
+  blah blah blah;
+  
+  return blah;
+}
+```
+```
+df/dx(x) {
+  let d = new infinitesimal; // d^2 = 0
+  return f(x + d).d_part;
+}
+```
+```
+d^2f/dx^2(x) {
+  let e = new infinitesimal; // e^2 = 0
+  return f'(x + e).e_part;
 }
 ```
 
+Example:
 ```
-linear'(x) {
-  dx <- 1;
+f(x, a, b, c) { // returns (ax+b)^2 + c
+  x <- a*x;
+  x <- x + b;
+  x <- x*x;
+  x <- x + c;
   
-  return a*dx;
+  return x;
 }
 ```
-```
-linear''(x) {
-  ddx <- 0;
-  dx <- 1;
-  
-  return a*ddx;
-}
-```
----
 
+Then stepping through f''(x, a, b, c), gives us
 ```
-sub(x) {
-  y <- x;
-  
-  return y;
-}
-```
-```
-sub'(x) {
-  
-}
+   x <- a*(x + d + e) = a*x + a*d + a*e
+   x <- a*x + a*d + a*e + b = a*x + b + a*d + a*e
+   x <- (a*x + b + a*d + a*e)*(a*x + b + a*d + a*e)
+        = (a*x+b)*(a*x+b) + a*d*(a*x+b+a*e) + a*e*(a*x+b+a*d)
+        = (a*x+b)*(a*x+b) + a*(a*x+b+2a*e)*d + a*(a*x+b)*e 
+   x <- (a*x+b)*(a*x+b)+c + a*(a*x+b+2a*e)*d + a*(a*x+b)*e
+   
+   return a*(a*x+b+2a*e)
+   return 2a*a
 ```
