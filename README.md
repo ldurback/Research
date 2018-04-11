@@ -34,4 +34,4 @@ Note: A recurse does not uniquely specify an element.  However, if every polynom
 
 (What about the edge cases where R - x = a non-zero constant?  In that case, x is an infinite number.  Use non-standard analysis)
 
-<img src="https://latex.codecogs.com/svg.latex?dx&space;=&space;\frac{d^n&space;R}{n!}" title="dx = \frac{d^n R}{n!}" />
+A recursive form is also a stable point of the mapping <img src="https://latex.codecogs.com/svg.latex?x&space;\to&space;R(x)" title="x \to R(x)" />
