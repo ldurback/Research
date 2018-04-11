@@ -24,7 +24,9 @@ In the complex geometric algebra, all elements have arbitrary exponents
 
 # Claim
 
-If we formall add inverses to the complex geometric algebra, all dx in the form of the above exists
+If we formall add inverses to the complex geometric algebra, all dx in the form of the above exists.
+
+---
 
 # Recursive Form
 
