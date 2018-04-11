@@ -61,3 +61,9 @@ because of this, some operations are not defined.  For instance, <img src="https
 Find interpretation of <img src="https://latex.codecogs.com/svg.latex?x&space;x^{-1}&space;=&space;1" title="x x^{-1} = 1" />
 
 Given the number 1 as being a special direction that commutes with everything and i is a hidden dimension that commutes with everything. 
+
+---
+
+# Coding
+
+Given the general form of a polynomial, I should be able to code up Newton's Method and prove that this all works.  Use general expression trees.
