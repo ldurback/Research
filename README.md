@@ -70,14 +70,25 @@ Given the general form of a polynomial, I should be able to code up Newton's Met
 
 ```
 f(x) {
-  x = x + 2;
-  x = (1/a)*x*x;
+  x = x + 1;
+  x = a*x*x;
 
   return x;
 }
 ```
 ```
 f'(x) {
-  return f(x + e).e_part
+  dx = 1;
+  
+  dx = dx;
+  x = x+1;
+  
+  dx = a*dx*x + a*x*dx;
+  x = a*x*x;
+  
+  return dx;
 }
 ```
+```
+f''(x) {
+}
