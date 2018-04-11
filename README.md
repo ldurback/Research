@@ -81,14 +81,14 @@ linear'(x) {
   return a*dx;
 }
 ```
-
+```
 linear''(x) {
   ddx <- 0;
   dx <- 1;
   
   return a*ddx;
 }
-
+```
 ---
 
 ```
