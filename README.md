@@ -30,6 +30,6 @@ If we formall add inverses to the complex geometric algebra, all dx in the form 
 
 A geometric element is in recursive form when it is written <img src="https://latex.codecogs.com/svg.latex?x&space;=&space;R(x)" title="x = R(x)" />  We will call R(x) the recurse of x.
 
-In recursive form, we have <img src="https://latex.codecogs.com/svg.latex?dx&space;=&space;\frac{d^n&space;R}{n!}" title="dx = \frac{d^n R}{n!}" />
+We also have <img src="https://latex.codecogs.com/svg.latex?dx&space;=&space;\frac{d^n&space;R}{n!}" title="dx = \frac{d^n R}{n!}" />
 
-Note: Recursive form often does not specify between a finite number of elements.
+Note: A recurse does not uniquely specify an element.  However, if every polynomial recurse specifies at least one element, then every polynomial has a root.
