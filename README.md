@@ -67,3 +67,17 @@ Given the number 1 as being a special direction that commutes with everything an
 # Coding
 
 Given the general form of a polynomial, I should be able to code up Newton's Method and prove that this all works.  Use general expression trees or an interative approach (autodifferentiation) to building functions
+
+```
+f(x) {
+  x = x + 2;
+  x = (1/a)*x*x;
+
+  return x;
+}
+```
+```
+f'(x) {
+  return f(x + e).e_part
+}
+```
