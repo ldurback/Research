@@ -69,39 +69,37 @@ Given the number 1 as being a special direction that commutes with everything an
 Given the general form of a polynomial, I should be able to code up Newton's Method and prove that this all works.  Use general expression trees or an interative approach (autodifferentiation) to building functions
 
 ```
-f(x) {
-  x = x + 1;
-  x = a*x*x;
+linear(x) {
+  return a*x + b;
+}
+```
 
-  return x;
+```
+linear'(x) {
+  dx <- 1;
+  
+  return a*dx;
+}
+```
+
+linear''(x) {
+  ddx <- 0;
+  dx <- 1;
+  
+  return a*ddx;
+}
+
+---
+
+```
+sub(x) {
+  y <- x;
+  
+  return y;
 }
 ```
 ```
-f'(x) {
-  dx = 1;
+sub'(x) {
   
-  dx = dx;
-  x = x+1;
-  
-  dx = a*dx*x + a*x*dx;
-  x = a*x*x;
-  
-  return dx;
-}
-```
-```
-f''(x) {
-  ddx = 1;
-  dx = 1;
-  
-  ddx = ddx;
-  dx = dx;
-  x = x + 1;
-  
-  ddx = a*dx*dx + a*dx*dx;
-  dx = a*dx*x + a*x*dx;
-  x = a*x*x;
-  
-  return ddx;
 }
 ```
