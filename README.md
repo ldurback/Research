@@ -24,7 +24,15 @@ In the complex geometric algebra, all elements have arbitrary exponents
 
 # Claim
 
-If we formall add inverses to the complex geometric algebra, all dx in the form of the above exists.
+If we add inverses to the complex geometric algebra, all dx in the form of the above exists.
+
+Assume that dx commutes with all elements (that is, there are infinitesimals so small that they're parallel to all elements).  Then
+
+<img src="https://latex.codecogs.com/svg.latex?d^n&space;f&space;=&space;dx^n&space;f^{(n)}" title="d^n f = dx^n f^{(n)}" />
+
+and so picking <img src="https://latex.codecogs.com/svg.latex?\widehat{dx}&space;\propto&space;(-f&space;f^{-(n)})^{\frac{1}{n}}" title="\widehat{dx} \propto (-f f^{-(n)})^{\frac{1}{n}}" /> sends Newton's Method in the correct direction
+
+This exists because all elements have inverses and arbitrary exponents.
 
 ---
 
