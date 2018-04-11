@@ -24,7 +24,7 @@ In the complex geometric algebra, all elements have arbitrary exponents
 
 # Claim
 
-If we add inverses to the complex geometric algebra, all dx in the form of the above exists.
+If we add formal inverses to the complex geometric algebra, all dx in the form of the above exists.
 
 Assume that dx commutes with all elements (that is, there are infinitesimals so small that they're parallel to all elements).  Then
 
@@ -48,11 +48,9 @@ A recursive form is also a stable point of the mapping <img src="https://latex.c
 
 ---
 
-# Commutitivity of inverse
+# Non-Distributivity of Inverse
 
-<img src="https://latex.codecogs.com/svg.latex?a^{-1}&space;b^{-1}&space;=&space;(ab)^{-1}" title="a^{-1} b^{-1} = (ab)^{-1}" />
-
-because of this, some operations are not defined.  For instance, <img src="https://latex.codecogs.com/svg.latex?(1&plus;\hat{x})^{-1}(1-\hat{x})^{-1}" title="(1+\hat{x})^{-1}(1-\hat{x})^{-1}" /> and <img src="https://latex.codecogs.com/svg.latex?(1&plus;\hat{x})^{-1}&space;&plus;&space;(1-\hat{x})^{-1}" title="(1+\hat{x})^{-1} + (1-\hat{x})^{-1}" /> both throw errors.
+If the inverse distributed, then due to the existence of 0-divisors in the geometric algebra, we would have elements that would multiply together to get 0^{-1}.  Therefore, the inverse cannot distribute, and in general, sums and products of inverse elements cannot be simplified.
 
 ---
 
