@@ -17,3 +17,19 @@ Note, f is polynomial if and only if n has a maximum, which is the order of the 
 As long as we can always choose dx such that <img src="https://latex.codecogs.com/svg.latex?\widehat{d^n&space;f}&space;=&space;-&space;\widehat{f}" title="\widehat{d^n f} = - \widehat{f}" />, then f has a root if it is polynomial.
 
 Therefore, our task is to construct the algebra so that such a dx always exists.
+
+# Note
+
+In the complex geometric algebra, all elements have arbitrary exponents
+
+# Claim
+
+If we formall add inverses to the complex geometric algebra, all dx in the form of the above exists
+
+# Recursive Form
+
+A geometric element is in recursive form when it is written <img src="https://latex.codecogs.com/svg.latex?x&space;=&space;R(x)" title="x = R(x)" />  We will call R(x) the recurse of x.
+
+In recursive form, we have <img src="https://latex.codecogs.com/svg.latex?dx&space;=&space;\frac{d^n&space;R}{n!}" title="dx = \frac{d^n R}{n!}" />
+
+Note: Recursive form often does not specify between a finite number of elements.
