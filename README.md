@@ -95,6 +95,7 @@ f''(x) {
   dx = 1;
   
   ddx = ddx;
+  dx = dx;
   x = x + 1;
   
   ddx = a*dx*dx + a*dx*dx;
