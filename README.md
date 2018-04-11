@@ -45,3 +45,19 @@ Note: A recurse does not uniquely specify an element.  However, if every polynom
 (What about the edge cases where R - x = a non-zero constant?  In that case, x is an infinite number.  Use non-standard analysis)
 
 A recursive form is also a stable point of the mapping <img src="https://latex.codecogs.com/svg.latex?x&space;\to&space;R(x)" title="x \to R(x)" />
+
+---
+
+# Commutitivity of inverse
+
+<img src="https://latex.codecogs.com/svg.latex?a^{-1}&space;b^{-1}&space;=&space;(ab)^{-1}" title="a^{-1} b^{-1} = (ab)^{-1}" />
+
+because of this, some operations are not defined.  For instance, <img src="https://latex.codecogs.com/svg.latex?(1&plus;\hat{x})^{-1}(1-\hat{x})^{-1}" title="(1+\hat{x})^{-1}(1-\hat{x})^{-1}" /> and <img src="https://latex.codecogs.com/svg.latex?(1&plus;\hat{x})^{-1}&space;&plus;&space;(1-\hat{x})^{-1}" title="(1+\hat{x})^{-1} + (1-\hat{x})^{-1}" /> both throw errors.
+
+---
+
+# Interpretation
+
+Find interpretation of <img src="https://latex.codecogs.com/svg.latex?x&space;x^{-1}&space;=&space;1" title="x x^{-1} = 1" />
+
+Given the number 1 as being a special direction that commutes with everything and i is a hidden dimension that commutes with everything. 
