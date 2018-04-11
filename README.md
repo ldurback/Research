@@ -91,4 +91,16 @@ f'(x) {
 ```
 ```
 f''(x) {
+  ddx = 1;
+  dx = 1;
+  
+  ddx = ddx;
+  x = x + 1;
+  
+  ddx = a*dx*dx + a*dx*dx;
+  dx = a*dx*x + a*x*dx;
+  x = a*x*x;
+  
+  return ddx;
 }
+```
