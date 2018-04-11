@@ -84,7 +84,7 @@ df/dx(x) {
 ```
 d^2f/dx^2(x) {
   let e = new infinitesimal; // e^2 = 0
-  return f'(x + e).e_part;
+  return df/dx(x + e).e_part;
 }
 ```
 
