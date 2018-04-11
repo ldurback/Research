@@ -6,9 +6,9 @@ The unified geometric algebra is the algebraic closure of the complex geometric 
 
 Assume that we have a smooth function f such that we can define differentials dx that satisfy for all x
 
-<img src="https://latex.codecogs.com/svg.latex?f(x&plus;dx)&space;=&space;\sum&space;\frac{d^n&space;f}{n!}&space;(x)" title="f(x+dx) = \sum_i \frac{d^i f}{i!} (x)" />
+<img src="https://latex.codecogs.com/svg.latex?f(x&plus;dx)&space;=&space;\sum_i&space;\frac{d^i&space;f}{i!}&space;(x)" title="f(x+dx) = \sum_i \frac{d^i f}{i!} (x)" />
 
-where <img src="https://latex.codecogs.com/svg.latex?d^n&space;f" title="d^n f" /> is strictly an nth order polynomial in dx.  The above then simplifies to
+where <img src="https://latex.codecogs.com/svg.latex?d^n&space;f" title="d^n f" /> is strictly an nth order polynomial in dx.  The above then simplifies to (for some n)
 
 <img src="https://latex.codecogs.com/svg.latex?f(x&plus;dx)&space;=&space;f(x)&space;&plus;&space;\frac{d^n&space;f}{n!}(x)" title="f(x+dx) = f(x) + \frac{d^n f}{n!}(x)" />
 
