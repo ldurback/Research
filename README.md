@@ -64,6 +64,8 @@ Simply convert every blade of the element to a blade-vector.
 
 We will write the vector conversion of x as <img src="https://latex.codecogs.com/svg.latex?\inline&space;\vec{x}" title="\vec{x}" />
 
+By definition of vector conversion, we have <img src="https://latex.codecogs.com/svg.latex?\overrightarrow{\vec{a}b}&space;=&space;\overrightarrow{ab}" title="\overrightarrow{\vec{a}b} = \overrightarrow{ab}" />
+
 # Down Conversion
 
 The down conversion refers to the process of converting any element of the extended geometric algebra to an element of the original geometric algebra.
