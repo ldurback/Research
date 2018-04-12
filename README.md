@@ -18,13 +18,9 @@ As long as we can always choose dx such that <img src="https://latex.codecogs.co
 
 Therefore, our task is to construct the algebra so that such a dx always exists.
 
-# Note
-
-In the complex geometric algebra, all elements have arbitrary exponents
-
 # Claim
 
-If we add formal inverses to the complex geometric algebra, all dx in the form of the above exists.
+If we add inverses and roots to the complex geometric algebra, all dx in the form of the above exists.
 
 Assume that dx commutes with all elements (that is, there are infinitesimals so small that they're parallel to all elements).  Then
 
@@ -38,21 +34,13 @@ So we have at least two options for the direction of dx
 
 ---
 
-# Recursive Form
-
-A geometric element is in recursive form when it is written <img src="https://latex.codecogs.com/svg.latex?x&space;=&space;R(x)" title="x = R(x)" />  We will call R(x) the recurse of x.
-
-Note: A recurse does not uniquely specify an element.  However, if every polynomial recurse specifies at least one element, then R - x has a root at that value.
-
-(What about the edge cases where R - x = a non-zero constant?  In that case, x is an infinite number.  Use non-standard analysis)
-
-A recursive form is also a stable point of the mapping <img src="https://latex.codecogs.com/svg.latex?x&space;\to&space;R(x)" title="x \to R(x)" />
-
----
-
 # Non-Distributivity of Inverse
 
 If the inverse distributed, then due to the existence of 0-divisors in the geometric algebra, we would have elements that would multiply together to get 0^{-1}.  Therefore, the inverse cannot distribute, and in general, sums and products of inverse elements cannot be simplified.
+
+# Magnitude of Inverse
+
+<img src="https://latex.codecogs.com/svg.latex?|a^{-1}|&space;=&space;|a|^{-1}" title="|a^{-1}| = |a|^{-1}" />
 
 ---
 
@@ -60,9 +48,37 @@ If the inverse distributed, then due to the existence of 0-divisors in the geome
 
 Find interpretation of <img src="https://latex.codecogs.com/svg.latex?x&space;x^{-1}&space;=&space;1" title="x x^{-1} = 1" />
 
-Given the number 1 is a special direction that commutes with everything and i is a hidden dimension that commutes with everything, all elements of the complex geometric algebra correspond to vectors.
+Create new vectors <img src="https://latex.codecogs.com/svg.latex?\inline&space;\widehat{1}" title="\widehat{1}" /> and <img src="https://latex.codecogs.com/svg.latex?\inline&space;\widehat{i}" title="\widehat{i}" /> that correspond to 1 and i as vectors.
 
-Inverse elements should correspond to boundaries.
+Given the number 1 is a special direction that commutes with everything and i is a hidden dimension that commutes with everything, all elements of the unified geometric algebra correspond to vectors.
+
+---
+
+# 1-hat, i-hat, and xy-hat
+
+1-hat and i-hat are special vectors that can be converted to scalars whenever they are on the very left side of a multiplication and no further calculations will be done with them.
+
+<img src="https://latex.codecogs.com/svg.latex?\inline&space;\widehat{1}a&space;=&space;a,&space;\:&space;a\widehat{1}&space;\neq&space;a" title="\widehat{1}a = a, \: a\widehat{1} \neq a" />
+
+<img src="https://latex.codecogs.com/svg.latex?\inline&space;\widehat{i}a&space;=&space;ia,&space;\:&space;a\widehat{i}&space;\neq&space;ai" title="\widehat{i}a = ia, \: a\widehat{i} \neq ai" />
+
+With the addition of these elements, <img src="https://latex.codecogs.com/svg.latex?\inline&space;(a&plus;b\hat{x})^{-1}&space;=&space;(a\hat{1}&plus;b\hat{x})^{-1}=\frac{(a\hat{1}&plus;b\hat{x})}{|a\hat{1}&plus;b\hat{x}|}=\frac{a\hat{1}&plus;b\hat{x}}{\sqrt{a^2&plus;b^2}}" title="(a+b\hat{x})^{-1} = (a\hat{1}+b\hat{x})^{-1}=\frac{(a\hat{1}+b\hat{x})}{|a\hat{1}+b\hat{x}|}=\frac{a\hat{1}+b\hat{x}}{\sqrt{a^2+b^2}}" />
+
+So now scalars + vectors have inverses.
+
+What if we assign a vector to each blade and make every geometric element equivalent to a vector?
+
+<img src="https://latex.codecogs.com/svg.latex?\inline&space;\widehat&space;{\hat{x}\hat{y}}a&space;\to&space;\hat{x}\hat{y}a" title="\widehat {\hat{x}\hat{y}}a \to \hat{x}\hat{y}a" />
+
+Now every element has inverses.
+
+# Real Exponents
+
+If x = e^y for some y (if x has a logarithm), then x^r = e^ry.  e^x does exist for all x, so we just need logarithms to exist for all elements.
+
+For bivectors, <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{x}\hat{y}&space;=&space;e^{\frac{\pi}{2}\hat{x}\hat{y}}" title="\hat{x}\hat{y} = e^{\frac{\pi}{2}\hat{x}\hat{y}}" />
+
+In general, we can take the logarithm of any real scalar + bivector.  Therefore, if we use our new unit vectors to convert x to a sum of a real scalar + a bivector, we can take its logarithm and therefore, we can exponentiate it to arbitrary real values.
 
 ---
 
