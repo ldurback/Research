@@ -58,55 +58,12 @@ If the inverse distributed, then due to the existence of 0-divisors in the geome
 
 Find interpretation of <img src="https://latex.codecogs.com/svg.latex?x&space;x^{-1}&space;=&space;1" title="x x^{-1} = 1" />
 
-Given the number 1 as being a special direction that commutes with everything and i is a hidden dimension that commutes with everything. 
+Given the number 1 is a special direction that commutes with everything and i is a hidden dimension that commutes with everything, all elements of the complex geometric algebra correspond to vectors.
+
+Inverse elements should correspond to boundaries.
 
 ---
 
 # Coding
 
 Given the general form of a polynomial, I should be able to code up Newton's Method and prove that this all works.  Use general expression trees or an interative approach (autodifferentiation) to building functions
-
-```
-f(x) {
-  blah blah blah;
-  
-  return blah;
-}
-```
-```
-df/dx(x) {
-  let d = new infinitesimal; // d^2 = 0
-  return f(x + d).d_part;
-}
-```
-```
-d^2f/dx^2(x) {
-  let e = new infinitesimal; // e^2 = 0
-  return df/dx(x + e).e_part;
-}
-```
-
-Example:
-```
-f(x, a, b, c) { // returns (ax+b)^2 + c
-  x <- a*x;
-  x <- x + b;
-  x <- x*x;
-  x <- x + c;
-  
-  return x;
-}
-```
-
-Then stepping through f''(x, a, b, c), gives us
-```
-   x <- a*(x + d + e) = a*x + a*d + a*e
-   x <- a*x + a*d + a*e + b = a*x + b + a*d + a*e
-   x <- (a*x + b + a*d + a*e)*(a*x + b + a*d + a*e)
-        = (a*x+b)*(a*x+b) + a*d*(a*x+b+a*e) + a*e*(a*x+b+a*d)
-        = (a*x+b)*(a*x+b) + a*(a*x+b+2a*e)*d + a*(a*x+b)*e 
-   x <- (a*x+b)*(a*x+b)+c + a*(a*x+b+2a*e)*d + a*(a*x+b)*e
-   
-   return a*(a*x+b+2a*e)
-   return 2a*a
-```
