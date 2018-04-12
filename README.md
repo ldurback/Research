@@ -2,7 +2,7 @@
 
 The unified geometric algebra is the algebraic closure of the complex geometric algebra.  By adding algebraic closure, we sacrifice the associativity of the algebra.
 
-# Guide for making the Unified Geometric Algebra algebraically closed
+# Guide for making the Geometric Algebra algebraically closed
 
 Assume that we have a smooth function f such that we can define differentials dx that satisfy for all x
 
@@ -40,55 +40,19 @@ If the inverse distributed, then due to the existence of 0-divisors in the geome
 
 ---
 
-# 1-hat, i-hat, xy-hat, and pseudo-inverses
+# Inverses and exponents of null elements are defined formally
 
-1-hat and i-hat are special vectors that can be converted to scalars whenever they are on the very left side of a multiplication and no further calculations will be done with them.
+For a finite number of dimension, there are only a finite number of unit null vectors in the geometric algebra.  Therefore, we can formally add inverses without it leading to a general unsolvability of the theory.
 
-<img src="https://latex.codecogs.com/svg.latex?\inline&space;\widehat{1}a&space;=&space;a,&space;\:&space;a\widehat{1}&space;\neq&space;a" title="\widehat{1}a = a, \: a\widehat{1} \neq a" />
+# Casting elements as real vectors and back
 
-<img src="https://latex.codecogs.com/svg.latex?\inline&space;\widehat{i}a&space;=&space;ia,&space;\:&space;a\widehat{i}&space;\neq&space;ai" title="\widehat{i}a = ia, \: a\widehat{i} \neq ai" />
+By adding new basis elements, we can cast every element as a real vector.
 
-With the addition of these elements we can define <img src="https://latex.codecogs.com/svg.latex?\inline&space;(a&plus;b\hat{x})^{-1}&space;=&space;(a\hat{1}&plus;b\hat{x})^{-1}=\frac{(a\hat{1}&plus;b\hat{x})}{|a\hat{1}&plus;b\hat{x}|}=\frac{a\hat{1}&plus;b\hat{x}}{\sqrt{a^2&plus;b^2}}" title="(a+b\hat{x})^{-1} = (a\hat{1}+b\hat{x})^{-1}=\frac{(a\hat{1}+b\hat{x})}{|a\hat{1}+b\hat{x}|}=\frac{a\hat{1}+b\hat{x}}{\sqrt{a^2+b^2}}" />
+Example: The element <img src="https://latex.codecogs.com/svg.latex?\inline&space;1&plus;2\hat{x}&plus;2i\hat{x}\hat{y}" title="1+2\hat{x}+2i\hat{x}\hat{y}" /> can be cast to a vector as <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{1}&plus;2\hat{x}&plus;2\widehat{ixy}" title="\hat{1}+2\hat{x}+2\widehat{ixy}" />
 
-x*x^{-1} will be 1, 0, or -1
+Except for null vectors, all vectors have inverses and exponents in the complex geometric algebra.
 
-So now scalars + vectors have (pseudo) inverses.
-
-What if we assign a vector to each blade and make every geometric element equivalent to a vector?
-
-<img src="https://latex.codecogs.com/svg.latex?\inline&space;\widehat&space;{\hat{x}\hat{y}}a&space;\to&space;\hat{x}\hat{y}a" title="\widehat {\hat{x}\hat{y}}a \to \hat{x}\hat{y}a" />
-
-Now every element has (pseudo) inverses.
-
-# True inverses
-
-The only elements that do not have inverses now are those that map to null vectors.  The null vectors do not form sub-algebra since though n1 and n2 are null vectors, n1 + n2 and (n1)(n2) generally are not null vectors.  However, there is only a finite number of null vectors in an algebra.
-
-First, form a basis of the total vector space in terms of null vectors.  Second, formally add inverses to the (finite set of) null vectors.
-
-# Exponents
-
-If x = e^y for some y (if x has a logarithm), then x^r = e^ry.  e^x does exist for all x, so we just need logarithms to exist for all elements.
-
-For bivectors, <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{x}\hat{y}&space;=&space;e^{\frac{\pi}{2}\hat{x}\hat{y}}" title="\hat{x}\hat{y} = e^{\frac{\pi}{2}\hat{x}\hat{y}}" />
-
-In general, we can take the logarithm of any real scalar + bivector (a rotor).  Therefore, if we use our new unit vectors to convert x to a sum of a real scalar + a bivector, we can take its logarithm and therefore, we can exponentiate it to arbitrary values y as long as x and y are not both 0.
-
-We can also take logarithms of any vectors
-
-If <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{x}^2&space;=&space;-1" title="\hat{x}^2 = -1" />, then <img src="https://latex.codecogs.com/svg.latex?\inline&space;e^{\frac{\pi}{2}\hat{x}}&space;=&space;\hat{x}" title="e^{\frac{\pi}{2}\hat{x}} = \hat{x}" />
-
-If <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{x}^2&space;=&space;-1" title="\hat{x}^2 = -1" />, then <img src="https://latex.codecogs.com/svg.latex?\inline&space;e^{i\frac{\pi}{2}\hat{x}}&space;=&space;i\hat{x}" title="e^{i\frac{\pi}{2}\hat{x}} = i\hat{x}" />
-
-If <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{x}^2&space;=&space;0" title="\hat{x}^2 = 0" />, formally add exponents.
-
-# Putting it together
-
-For a given x, let MV(x) be its multivector form, V(x) be its vector form, and R(x) be its rotor form.
-
-We can form V(x)^{-1} and R(x)^y for any y as long as x is not 0.
-
-Attempt:  <img src="https://latex.codecogs.com/svg.latex?\inline&space;dx&space;\propto&space;V[-f&space;V(f)^{-(n)}]^{\frac{1}{n}}" title="dx \propto V[-f V(f)^{-(n)}]^{\frac{1}{n}}" /> or <img src="https://latex.codecogs.com/svg.latex?\inline&space;dx&space;\propto&space;V[-V(f)^{-(n)}&space;f]^{\frac{1}{n}}" title="dx \propto V[-V(f)^{-(n)} f]^{\frac{1}{n}}" />
+At the end of all calculations, we want to cast everything to the complex geometric algebra without these new basis elements.  This lets us talk about elements as if they had inverses.
 
 ---
 
