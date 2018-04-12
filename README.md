@@ -54,11 +54,15 @@ Except for null vectors, all vectors have inverses and exponents in the complex 
 
 At the end of all calculations, we want to cast everything to the complex geometric algebra without these new basis elements.  This lets us talk about elements as if they had inverses and exponents.
 
+
+
 ---
 
 # Putting it together
 
+Choose <img src="https://latex.codecogs.com/svg.latex?\inline&space;dx&space;\propto&space;[-\vec{f}&space;\vec{f}^{-(n)}]^{\frac{1}{n}}" title="dx \propto [-\vec{f} \vec{f}^{-(n)}]^{\frac{1}{n}}" />
 
+Then <img src="https://latex.codecogs.com/svg.latex?\inline&space;dx^n&space;f^{(n)}&space;\propto&space;-\vec{f}&space;\vec{f}^{-(n)}f^{(n)}" title="dx^n f^{(n)} \propto -\vec{f} \vec{f}^{-(n)}f^{(n)}" />
 
 ---
 
