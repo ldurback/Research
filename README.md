@@ -1,6 +1,6 @@
 # Unified Geometric Algebra
 
-The unified geometric algebra is the algebraic closure of the complex geometric algebra.  By adding algebraic closure, we sacrifice the associativity of the algebra.
+The unified geometric algebra is the algebraic closure of the complex geometric algebra.  By adding algebraic closure, we sacrifice a few properties. 
 
 # Guide for making the Geometric Algebra algebraically closed
 
@@ -46,9 +46,9 @@ For a finite number of dimension, there are only a finite number of unit null ve
 
 # Casting elements as real vectors and back
 
-By adding new basis elements, we can cast every element as a real vector.
+By adding new basis elements, we can cast every element as a complex vector.
 
-Example: The element <img src="https://latex.codecogs.com/svg.latex?\inline&space;1&plus;2\hat{x}&plus;2i\hat{x}\hat{y}" title="1+2\hat{x}+2i\hat{x}\hat{y}" /> can be cast to a vector as <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{1}&plus;2\hat{x}&plus;2\widehat{ixy}" title="\hat{1}+2\hat{x}+2\widehat{ixy}" />
+Example: The element <img src="https://latex.codecogs.com/svg.latex?\inline&space;1&plus;2\hat{x}&plus;2i\hat{x}\hat{y}" title="1+2\hat{x}+2i\hat{x}\hat{y}" /> can be cast to a vector as <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{1}&plus;2\hat{x}&plus;2i\widehat{xy}" title="\hat{1}+2\hat{x}+2i\widehat{xy}" />
 
 Except for null vectors, all vectors have inverses and exponents in the complex geometric algebra.
 
