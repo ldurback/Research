@@ -76,9 +76,13 @@ We will write the down converion of x as <img src="https://latex.codecogs.com/sv
 
 Modulo the down conversion, all elements are equivalent to their vector conversion.  Every non-null complex vector has arbitrary exponents (including an inverse).
 
+By construction, we have <img src="https://latex.codecogs.com/svg.latex?\vec{a}b&space;\equiv&space;ab" title="\vec{a}b \equiv ab" />
+
+Attempts:
+
 <img src="https://latex.codecogs.com/svg.latex?\inline&space;a&space;\equiv&space;b&space;\implies&space;\vec{c}a&space;\equiv&space;\vec{c}b" title="a \equiv b \implies \vec{c}a \equiv \vec{c}b" />
 
-<img src="https://latex.codecogs.com/svg.latex?\vec{a}\vec{b}&space;\equiv&space;ab" title="\vec{a}\vec{b} \equiv ab" />
+<img src="https://latex.codecogs.com/svg.latex?a&space;\equiv&space;b&space;\implies&space;a^{n&plus;1}&space;\equiv&space;a^n&space;b&space;\equiv&space;b&space;a^n" title="a \equiv b \implies a^{n+1} \equiv a^n b \equiv b a^n" />
 
 ---
 
