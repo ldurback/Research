@@ -74,7 +74,7 @@ We will write the down converion of x as <img src="https://latex.codecogs.com/sv
 
 # The Unified Geometric Algebra as the Extended Geometric Algebra Modulo the Down Conversion
 
-Modulo the down conversion, all elements are equivalent to their vector conversion.  Every non-null complex vector has arbitrary exponents (including an inverse).
+Modulo the down conversion, all elements are equivalent to their vector conversion.  Every non-null complex vector has arbitrary exponents (including an inverse) as do any products of 2 non-null complex vectors.
 
 By construction, we have <img src="https://latex.codecogs.com/svg.latex?\vec{a}b&space;\equiv&space;ab" title="\vec{a}b \equiv ab" />
 
@@ -84,7 +84,7 @@ But, for the special case where c is simple, we can substitute on the right: <im
 
 By the above two statement, if we pick  <img src="https://latex.codecogs.com/svg.latex?dx&space;\propto&space;[-\vec{f}^{-(n)}&space;\vec{f}]^{\frac{1}{n}}" title="dx \propto [-\vec{f}^{-(n)} \vec{f}]^{\frac{1}{n}}" />, then Newton's Method on the Unified Geometric Algebra follows because (taking all proportions modulo the down conversion):
 
-<img src="https://latex.codecogs.com/svg.latex?d^n&space;f&space;=&space;f^{(n)}&space;dx^n&space;\propto&space;-f^{(n)}&space;\vec{f}^{-(n)}&space;\vec{f}&space;\equiv&space;-\vec{f}^{(n)}&space;\vec{f}^{-(n)}&space;\vec{f}&space;\equiv&space;-\vec{f}&space;\equiv&space;-f" title="d^n f = f^{(n)} dx^n \propto -f^{(n)} \vec{f}^{-(n)} \vec{f} \equiv -\vec{f}^{(n)} \vec{f}^{-(n)} \vec{f} \equiv -\vec{f} \equiv -f" />
+<img src="https://latex.codecogs.com/svg.latex?d^n&space;f&space;=&space;f^{(n)}&space;dx^n&space;\propto&space;-f^{(n)}&space;\vec{f}^{-(n)}&space;\vec{f}&space;\equiv&space;-\vec{f}^{(n)}&space;\vec{f}^{-(n)}&space;\vec{f}&space;=&space;-\vec{f}&space;\equiv&space;-f" title="d^n f = f^{(n)} dx^n \propto -f^{(n)} \vec{f}^{-(n)} \vec{f} \equiv -\vec{f}^{(n)} \vec{f}^{-(n)} \vec{f} = -\vec{f} \equiv -f" />
 
 ---
 
