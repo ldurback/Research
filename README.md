@@ -40,7 +40,7 @@ If the inverse distributed, then due to the existence of 0-divisors in the geome
 
 ---
 
-# 1-hat, i-hat, and xy-hat
+# 1-hat, i-hat, xy-hat, and pseudo-inverses
 
 1-hat and i-hat are special vectors that can be converted to scalars whenever they are on the very left side of a multiplication and no further calculations will be done with them.
 
@@ -60,6 +60,12 @@ What if we assign a vector to each blade and make every geometric element equiva
 
 Now every element has (pseudo) inverses.
 
+# True inverses
+
+The only elements that do not have inverses now are those that map to null vectors.  The null vectors do not form sub-algebra since though n1 and n2 are null vectors, n1 + n2 and (n1)(n2) generally are not null vectors.  However, there is only a finite number of null vectors in an algebra.
+
+First, form a basis of the total vector space in terms of null vectors.  Second, formally add inverses to the (finite set of) null vectors.
+
 # Exponents
 
 If x = e^y for some y (if x has a logarithm), then x^r = e^ry.  e^x does exist for all x, so we just need logarithms to exist for all elements.
@@ -74,7 +80,7 @@ If <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{x}^2&space;
 
 If <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{x}^2&space;=&space;-1" title="\hat{x}^2 = -1" />, then <img src="https://latex.codecogs.com/svg.latex?\inline&space;e^{i\frac{\pi}{2}\hat{x}}&space;=&space;i\hat{x}" title="e^{i\frac{\pi}{2}\hat{x}} = i\hat{x}" />
 
-If <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{x}^2&space;=&space;0" title="\hat{x}^2 = 0" />, then we should treat x as a differential and formally add an x^2
+If <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{x}^2&space;=&space;0" title="\hat{x}^2 = 0" />, formally add exponents.
 
 # Putting it together
 
