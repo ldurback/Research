@@ -74,7 +74,7 @@ For bivectors, <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat
 
 In general, we can take the logarithm of any real scalar + bivector (a rotor).  Therefore, if we use our new unit vectors to convert x to a sum of a real scalar + a bivector, we can take its logarithm and therefore, we can exponentiate it to arbitrary values y as long as x and y are not both 0.
 
-For vectors in the complex clifford algebra:
+We can also take logarithms of any vectors
 
 If <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{x}^2&space;=&space;-1" title="\hat{x}^2 = -1" />, then <img src="https://latex.codecogs.com/svg.latex?\inline&space;e^{\frac{\pi}{2}\hat{x}}&space;=&space;\hat{x}" title="e^{\frac{\pi}{2}\hat{x}} = \hat{x}" />
 
@@ -88,7 +88,7 @@ For a given x, let MV(x) be its multivector form, V(x) be its vector form, and R
 
 We can form V(x)^{-1} and R(x)^y for any y as long as x is not 0.
 
-Attempt:  Try <img src="https://latex.codecogs.com/svg.latex?\inline&space;dx&space;\propto&space;R[-f&space;V(f)^{-(n)}]^{\frac{1}{n}}" title="dx \propto R[-f V(f)^{-(n)}]^{\frac{1}{n}}" /> or <img src="https://latex.codecogs.com/svg.latex?\inline&space;dx&space;\propto&space;R[-&space;V(f)^{-(n)}&space;f]^{\frac{1}{n}}" title="dx \propto R[- V(f)^{-(n)} f]^{\frac{1}{n}}" />
+Attempt:  <img src="https://latex.codecogs.com/svg.latex?\inline&space;dx&space;\propto&space;V[-f&space;V(f)^{-(n)}]^{\frac{1}{n}}" title="dx \propto V[-f V(f)^{-(n)}]^{\frac{1}{n}}" /> or <img src="https://latex.codecogs.com/svg.latex?\inline&space;dx&space;\propto&space;V[-V(f)^{-(n)}&space;f]^{\frac{1}{n}}" title="dx \propto V[-V(f)^{-(n)} f]^{\frac{1}{n}}" />
 
 ---
 
