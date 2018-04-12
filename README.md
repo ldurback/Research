@@ -78,6 +78,8 @@ Modulo the down conversion, all elements are equivalent to their vector conversi
 
 By construction, we have <img src="https://latex.codecogs.com/svg.latex?\vec{a}b&space;\equiv&space;ab" title="\vec{a}b \equiv ab" />
 
+and more generally <img src="https://latex.codecogs.com/svg.latex?a&space;\equiv&space;b&space;\implies&space;ac&space;\equiv&space;bc" title="a \equiv b \implies ac \equiv bc" />  I.e. we can substitute value on the left of a multiplication but not, in general, values on the right.
+
 Attempts:
 
 <img src="https://latex.codecogs.com/svg.latex?\inline&space;a&space;\equiv&space;b&space;\implies&space;\vec{c}a&space;\equiv&space;\vec{c}b" title="a \equiv b \implies \vec{c}a \equiv \vec{c}b" />
