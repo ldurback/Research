@@ -82,7 +82,7 @@ and more generally <img src="https://latex.codecogs.com/svg.latex?a&space;\equiv
 
 But, for the special case where c is a vector, we can substitute on the right: <img src="https://latex.codecogs.com/svg.latex?\inline&space;a&space;\equiv&space;b&space;\implies&space;\vec{c}a&space;\equiv&space;\vec{c}b" title="a \equiv b \implies \vec{c}a \equiv \vec{c}b" />
 
-By the above two statement, if we pick  <img src="https://latex.codecogs.com/svg.latex?dx&space;\propto&space;[-\overrightarrow{f&space;\vec{f}^{-(n)}}]^{\frac{1}{n}}" title="dx \propto [-\overrightarrow{f \vec{f}^{-(n)}}]^{\frac{1}{n}}" />, then Newton's Method follows.
+By the above two statement, if we pick  <img src="https://latex.codecogs.com/svg.latex?dx&space;\propto&space;[-\overrightarrow{f&space;\vec{f}^{-(n)}}]^{\frac{1}{n}}" title="dx \propto [-\overrightarrow{f \vec{f}^{-(n)}}]^{\frac{1}{n}}" />, then Newton's Method on the Unified Geometric Algebra follows.
 
 Attempts:
 
