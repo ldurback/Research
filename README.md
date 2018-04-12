@@ -52,7 +52,13 @@ Example: The element <img src="https://latex.codecogs.com/svg.latex?\inline&spac
 
 Except for null vectors, all vectors have inverses and exponents in the complex geometric algebra.
 
-At the end of all calculations, we want to cast everything to the complex geometric algebra without these new basis elements.  This lets us talk about elements as if they had inverses.
+At the end of all calculations, we want to cast everything to the complex geometric algebra without these new basis elements.  This lets us talk about elements as if they had inverses and exponents.
+
+---
+
+# Putting it together
+
+
 
 ---
 
