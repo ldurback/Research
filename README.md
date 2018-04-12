@@ -40,29 +40,33 @@ If the inverse distributed, then due to the existence of 0-divisors in the geome
 
 ---
 
-# Inverses and exponents of null elements are defined formally
+# Inverses and exponents of null elements can be defined formally
 
 For a finite number of dimension, there are only a finite number of unit null vectors in the geometric algebra.  Therefore, we can formally add inverses without it leading to a general unsolvability of the theory.
 
-# Casting elements as real vectors and back
-
-By adding new basis elements, we can cast every element as a complex vector.
-
-Example: The element <img src="https://latex.codecogs.com/svg.latex?\inline&space;1&plus;2\hat{x}&plus;2i\hat{x}\hat{y}" title="1+2\hat{x}+2i\hat{x}\hat{y}" /> can be cast to a vector as <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{1}&plus;2\hat{x}&plus;2i\widehat{xy}" title="\hat{1}+2\hat{x}+2i\widehat{xy}" />
-
-Except for null vectors, all vectors have inverses and exponents in the complex geometric algebra.
-
-At the end of all calculations, we want to cast everything to the complex geometric algebra without these new basis elements.  This lets us talk about elements as if they had inverses and exponents.
-
-
-
 ---
 
-# Putting it together
+# Blade-Vectors and Extended Blades
 
-Choose <img src="https://latex.codecogs.com/svg.latex?\inline&space;dx&space;\propto&space;[-\vec{f}&space;\vec{f}^{-(n)}]^{\frac{1}{n}}" title="dx \propto [-\vec{f} \vec{f}^{-(n)}]^{\frac{1}{n}}" />
+For every basis blade of the complex geometric algebra, we add a new vector element called a blade-vector.
 
-Then <img src="https://latex.codecogs.com/svg.latex?\inline&space;d^n&space;f&space;=&space;dx^n&space;f^{(n)}&space;\propto&space;-\vec{f}&space;\vec{f}^{-(n)}f^{(n)}" title="d^n f = dx^n f^{(n)} \propto -\vec{f} \vec{f}^{-(n)}f^{(n)}" />
+Some examples:
+
+1: <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{1}" title="\hat{1}" />
+
+<img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{x}\hat{y}" title="\hat{x}\hat{y}" />: <img src="https://latex.codecogs.com/svg.latex?\inline&space;\widehat{xy}" title="\widehat{xy}" />
+
+We can then form extended blades from these blade-vectors: <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{1}\widehat{xy}\hat{x}\hat{y}" title="\hat{1}\widehat{xy}\hat{x}\hat{y}" />
+
+# Down Projection
+
+Every extended blade can be down projected onto the complex geometric algebra.  Down projection forms an equivalency relation
+
+<img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{1}\widehat{xy}\hat{x}\hat{y}&space;\equiv&space;\hat{x}\hat{y}\hat{x}\hat{y}&space;=&space;-1" title="\hat{1}\widehat{xy}\hat{x}\hat{y} \equiv \hat{x}\hat{y}\hat{x}\hat{y} = -1" />
+
+# The Unified Geometric Algebra as a Modular Algebra
+
+Modulo the down projection, all extended multivectors are equivalent to complex vectors, which have both inverses and arbitrary exponents as long as they are not null vectors.
 
 ---
 
