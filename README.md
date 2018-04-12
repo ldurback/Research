@@ -68,6 +68,11 @@ Every extended blade can be down projected onto the complex geometric algebra.  
 
 Modulo the down projection, all extended multivectors are equivalent to complex vectors, which have both inverses and arbitrary exponents as long as they are not null vectors.
 
+Hypothesis: <img src="https://latex.codecogs.com/svg.latex?\inline&space;a&space;\equiv&space;b&space;\implies&space;a^{n&plus;1}&space;\equiv&space;a^n&space;b&space;\equiv&space;b&space;a^n" title="a \equiv b \implies a^{n+1} \equiv a^n b \equiv b a^n" />
+
+This in particular would imply <img src="https://latex.codecogs.com/svg.latex?\inline&space;a&space;\equiv&space;b&space;\implies&space;1&space;\equiv&space;a^{-1}&space;b&space;\equiv&space;b&space;a^{-1}" title="a \equiv b \implies 1 \equiv a^{-1} b \equiv b a^{-1}" />, which is to say that if a and b are equivalent, then they share an inverse.
+
+
 ---
 
 # Coding
