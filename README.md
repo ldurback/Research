@@ -80,13 +80,11 @@ By construction, we have <img src="https://latex.codecogs.com/svg.latex?\vec{a}b
 
 and more generally <img src="https://latex.codecogs.com/svg.latex?a&space;\equiv&space;b&space;\implies&space;ac&space;\equiv&space;bc" title="a \equiv b \implies ac \equiv bc" />  I.e. we can substitute value on the left of a multiplication but not, in general, values on the right.
 
-But, for the special case where c is a vector, we can substitute on the right: <img src="https://latex.codecogs.com/svg.latex?\inline&space;a&space;\equiv&space;b&space;\implies&space;\vec{c}a&space;\equiv&space;\vec{c}b" title="a \equiv b \implies \vec{c}a \equiv \vec{c}b" />
+But, for the special case where c is simple, we can substitute on the right: <img src="https://latex.codecogs.com/svg.latex?a&space;\equiv&space;b&space;\implies&space;\underline{c}a&space;\equiv&space;\underline{c}b" title="a \equiv b \implies \underline{c}a \equiv \underline{c}b" />
 
-By the above two statement, if we pick  <img src="https://latex.codecogs.com/svg.latex?dx&space;\propto&space;[-\overrightarrow{f&space;\vec{f}^{-(n)}}]^{\frac{1}{n}}" title="dx \propto [-\overrightarrow{f \vec{f}^{-(n)}}]^{\frac{1}{n}}" />, then Newton's Method on the Unified Geometric Algebra follows.
+By the above two statement, if we pick  <img src="https://latex.codecogs.com/svg.latex?dx&space;\propto&space;[-\vec{f}^{-(n)}&space;\vec{f}]^{\frac{1}{n}}" title="dx \propto [-\vec{f}^{-(n)} \vec{f}]^{\frac{1}{n}}" />, then Newton's Method on the Unified Geometric Algebra follows because (taking all proportions modulo the down conversion):
 
-Attempts:
-
-<img src="https://latex.codecogs.com/svg.latex?a&space;\equiv&space;b&space;\implies&space;a^{n&plus;1}&space;\equiv&space;a^n&space;b&space;\equiv&space;b&space;a^n" title="a \equiv b \implies a^{n+1} \equiv a^n b \equiv b a^n" />
+<img src="https://latex.codecogs.com/svg.latex?d^n&space;f&space;=&space;f^{(n)}&space;dx^n&space;\propto&space;-f^{(n)}&space;\vec{f}^{-(n)}&space;\vec{f}&space;\equiv&space;-\vec{f}^{(n)}&space;\vec{f}^{-(n)}&space;\vec{f}&space;\equiv&space;-\vec{f}&space;\equiv&space;-f" title="d^n f = f^{(n)} dx^n \propto -f^{(n)} \vec{f}^{-(n)} \vec{f} \equiv -\vec{f}^{(n)} \vec{f}^{-(n)} \vec{f} \equiv -\vec{f} \equiv -f" />
 
 ---
 
