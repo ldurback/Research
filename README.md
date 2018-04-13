@@ -34,7 +34,7 @@ Therefore, our task is to construct the algebra so that such a dx always exists.
 
 We get null points iff <img src="https://latex.codecogs.com/svg.latex?\inline&space;p^{(m)}" title="p^{(m)}" /> is null.  Let <img src="https://latex.codecogs.com/svg.latex?\inline&space;n&space;:=&space;p^{(m)}" title="n := p^{(m)}" />
 
-In that case, I claim one of the linear factors of p is <img src="https://latex.codecogs.com/svg.latex?\inline&space;nx&plus;c" title="nx+c" />
+In that case, p(x) has no linear factorization.
 
 ---
 
