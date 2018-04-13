@@ -26,9 +26,9 @@ Therefore, our task is to construct the algebra so that such a dx always exists.
 
 ---
 
-# If <img src="https://latex.codecogs.com/svg.latex?\inline&space;p^{(m)}" title="p^{(m)}" /> is null
+# If we encounter a null point
 
-We get null points iff <img src="https://latex.codecogs.com/svg.latex?\inline&space;p^{(m)}" title="p^{(m)}" /> is null.  
+We get null points iff <img src="https://latex.codecogs.com/svg.latex?\inline&space;p^{(m)}" title="p^{(m)}" /> is null.
 
 ---
 
