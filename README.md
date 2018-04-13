@@ -12,9 +12,9 @@ where <img src="https://latex.codecogs.com/svg.latex?d^n&space;f" title="d^n f" 
 
 <img src="https://latex.codecogs.com/svg.latex?f(x&plus;dx)&space;=&space;f(x)&space;&plus;&space;\frac{d^n&space;f}{n!}(x)" title="f(x+dx) = f(x) + \frac{d^n f}{n!}(x)" />
 
-We will call any points x such that d^i f(x) is null for all i "null points" of f.
-
 Note, f is polynomial if and only if n has a maximum, which is the order of the polynomial.
+
+We will call any points x such that d^i f(x) is null for all i "null points" of f.  Note: For f polynomial, for any null points to exist, we need that <img src="https://latex.codecogs.com/svg.latex?\inline&space;f^{(m)}" title="f^{(m)}" /> is null (and constant) for m equal to the order of f.
 
 As long as we can always choose dx such that <img src="https://latex.codecogs.com/svg.latex?\widehat{d^n&space;f}&space;=&space;-&space;\widehat{f}" title="\widehat{d^n f} = - \widehat{f}" />, then f has a root if it is polynomial.
 
@@ -26,11 +26,9 @@ Therefore, our task is to construct the algebra so that such a dx always exists.
 
 ---
 
-# Null points
+# If <img src="https://latex.codecogs.com/svg.latex?\inline&space;p^{(m)}" title="p^{(m)}" /> is null
 
-Null vectors singify minima of |f|.  To classify these minima, simply trace out the range that maps to the same value of |f|.
-
-We want to factor p as <img src="https://latex.codecogs.com/svg.latex?\inline&space;p(q)&space;=&space;\prod&space;(a_i&space;q&space;&minus;&space;b_i)" title="p(q) = \prod (a_i q - b_i)" />.  Note that null points only show up when at least one a_i is a null vector.  Therefore, if we run into a null vector, we can follow a
+We get null points iff <img src="https://latex.codecogs.com/svg.latex?\inline&space;p^{(m)}" title="p^{(m)}" /> is null.  
 
 ---
 
