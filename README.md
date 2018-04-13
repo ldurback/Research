@@ -4,7 +4,7 @@ The geometric algebra can be extended so that it is algebraically closed (in the
 
 # Motivation
 
-By having a higher dimensional algebra where every polynomial can be factored, we can solve any high dimensional linear pde.
+By having a higher dimensional algebra where every polynomial can be factored and we can solve any high dimensional linear pde.  Additionally, we can construct programming languages that have multi-variable auto-differentiation built in.
 
 # Guide for making the Geometric Algebra algebraically closed
 
