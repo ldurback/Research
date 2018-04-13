@@ -40,9 +40,13 @@ If the inverse distributed, then due to the existence of 0-divisors in the geome
 
 ---
 
-# Inverses and exponents of null elements can be defined formally
+# Inverses and exponents of null vectors
 
-For a finite number of dimension, there are only a finite number of unit null vectors in the geometric algebra.  Therefore, we can formally add inverses without it leading to a general unsolvability of the theory.
+The only vectors in a complex geometric algebra without inverses and exponents are the null vectors.
+
+If the number of dimensions > 1, then the null vectors form a basis of the complex vector space.
+
+For each null vector <img src="https://latex.codecogs.com/svg.latex?\hat{n}" title="\hat{n}" />, we can formally add <img src="https://latex.codecogs.com/svg.latex?\hat{n}^k" title="\hat{n}^k" /> for arbitrary k of the algebra and demand both that these elements commute with everything as long as k is not 1 and that <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{n}^{-2}&space;=&space;0" title="\hat{n}^{-2} = 0" />
 
 ---
 
