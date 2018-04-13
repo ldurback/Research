@@ -1,6 +1,10 @@
-# Solving Polynomials with an Extended Complex Geometric Algebra
+# Factoring Polynomials with an Extended Complex Geometric Algebra
 
-The geometric algebra can be extended so that it is algebraically closed.  By adding algebraic closure, we sacrifice a few properties. 
+The geometric algebra can be extended so that it is algebraically closed (in the sense that every polynomial can be analytically factored into linear parts).  By adding algebraic closure, we sacrifice a few properties. 
+
+# Motivation
+
+By having a higher dimensional algebra where every polynomial can be factored, we can solve any high dimensional linear pde.
 
 # Guide for making the Geometric Algebra algebraically closed
 
@@ -28,7 +32,9 @@ Therefore, our task is to construct the algebra so that such a dx always exists.
 
 # If we encounter a null point
 
-We get null points iff <img src="https://latex.codecogs.com/svg.latex?\inline&space;p^{(m)}" title="p^{(m)}" /> is null.
+We get null points iff <img src="https://latex.codecogs.com/svg.latex?\inline&space;p^{(m)}" title="p^{(m)}" /> is null.  Let <img src="https://latex.codecogs.com/svg.latex?\inline&space;n&space;:=&space;p^{(m)}" title="n := p^{(m)}" />
+
+In that case, I claim one of the linear factors of p is <img src="https://latex.codecogs.com/svg.latex?\inline&space;nx&plus;c" title="nx+c" />
 
 ---
 
@@ -81,3 +87,28 @@ For the special case where c is simple, we can substitute on the right: <img src
 # Coding
 
 Given the general form of a polynomial, I should be able to code up Newton's Method and prove that this all works.  Use general expression trees or an interative approach (with autodifferentiation) to building functions.  In the interative approach, polynomials are any functions that do not involve division of x or loops that depend on the value of x
+
+---
+
+# Background Material
+
+# Factoring Complex Polynomials
+
+A polynomial is factored when it is written as a product of linear terms.  Over the complex numbers, every polynomial can be shown to be factorable using an analytic method known as Newton's Method, which shows the existence of 0s of the polynomial.  If <img src="https://latex.codecogs.com/svg.latex?\inline&space;p(x_r)&space;=&space;0" title="p(x_r) = 0" />, then we can always find another polynomial q such that for all x, <img src="https://latex.codecogs.com/svg.latex?\inline&space;p(x)&space;=&space;(x-x_r)q(x)" title="p(x) = (x-x_r)q(x)" />.  Since q is of lower order than p by 1, Newton's Method shows the existence of m linear factors for any polynomial of order m.
+
+Newton's method relies on the expansion <img src="https://latex.codecogs.com/svg.latex?\inline&space;f(x&plus;dx)&space;=&space;\sum&space;\frac{1}{i!}d^n&space;f&space;=&space;\sum&space;\frac{1}{i!}f^{(i)}(x)dx^i" title="f(x+dx) = \sum \frac{1}{i!}d^n f = \sum \frac{1}{i!}f^{(i)}(x)dx^i" /> where <img src="https://latex.codecogs.com/gif.latex?f^{(i)}" title="f^{(i)}" /> is the ith derivative of f, and <img src="https://latex.codecogs.com/gif.latex?f^{(0)}&space;=&space;f" title="f^{(0)} = f" />.  Since dx is an infinitesmimal, we can neglect all terms higher than the first one encountered and get
+
+<img src="https://latex.codecogs.com/svg.latex?\inline&space;f(x&plus;dx)&space;=&space;f(x)&space;&plus;&space;\frac{1}{n!}d^n&space;f&space;=&space;f(x)&space;&plus;&space;\frac{1}{n!}f^{(n)}(x)dx^n" title="f(x+dx) = f(x) + \frac{1}{n!}d^n f = f(x) + \frac{1}{n!}f^{(n)}(x)dx^n" />
+
+Note, as long as p is a polynomial (with order greater than 1), this expansion is never trivial since we always have some a non-zero f^{(i)}(x) (derivative or higher derivative of f).
+
+If we take the magnitude of the result, we get <img src="https://latex.codecogs.com/svg.latex?\inline&space;|f(x&plus;dx)|&space;=&space;|f(x)&space;&plus;&space;\frac{1}{n!}d^n&space;f|&space;=&space;|f(x)&space;&plus;&space;\frac{1}{n!}f^{(n)}(x)dx^n|" title="|f(x+dx)| = |f(x) + \frac{1}{n!}d^n f| = |f(x) + \frac{1}{n!}f^{(n)}(x)dx^n|" />.  We can always make |f(x+dx)| smaller than |f(x)| by choosing <img src="https://latex.codecogs.com/svg.latex?\inline&space;dx&space;\propto&space;[-\frac{f}{f^{(n)}}]^{\frac{1}{n}}" title="dx \propto [-\frac{f}{f^{(n)}}]^{\frac{1}{n}}" />
+
+Since such a dx always exists, this implies that, given a value of x, there is always a direction dx that we can move in to make |f(x)| smaller.
+
+Why does this imply the existence of a zero if f is a polynomial?
+
+Using the symbol <img src="https://latex.codecogs.com/svg.latex?\inline&space;Nx" title="Nx" /> to mean an infinite value of x (just as dx is an infinitesimal) and noting that the mth derivative of p is a constant where m is the order of p:
+
+<img src="https://latex.codecogs.com/gif.latex?p(Nx)&space;=&space;\frac{p^{(m)}}{m!}&space;(Nx)^m" title="p(Nx) = \frac{p^{(m)}}{m!} (Nx)^m" />.  Since p(Nx) is, in general, infinite, the minima of p have to be attained when x is in the interior of the complex plane.  Therefore, as we follow the direction dx given above, we'll stay in a bounded region.
+
