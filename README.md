@@ -1,6 +1,6 @@
-# Unified Geometric Algebra
+# Solving Polynomials with an Extended Complex Geometric Algebra
 
-The unified geometric algebra is the algebraic closure of the complex geometric algebra.  By adding algebraic closure, we sacrifice a few properties. 
+The geometric algebra can be extended so that it is algebraically closed.  By adding algebraic closure, we sacrifice a few properties. 
 
 # Guide for making the Geometric Algebra algebraically closed
 
@@ -8,45 +8,29 @@ Assume that we have a smooth function f such that we can define differentials dx
 
 <img src="https://latex.codecogs.com/svg.latex?f(x&plus;dx)&space;=&space;\sum_i&space;\frac{d^i&space;f}{i!}&space;(x)" title="f(x+dx) = \sum_i \frac{d^i f}{i!} (x)" />
 
-where <img src="https://latex.codecogs.com/svg.latex?d^n&space;f" title="d^n f" /> is strictly an nth order polynomial in dx.  The above then simplifies to (for some n)
+where <img src="https://latex.codecogs.com/svg.latex?d^n&space;f" title="d^n f" /> is strictly an nth order polynomial in dx.  The above then simplifies to (for some n such that n is non-null)
 
 <img src="https://latex.codecogs.com/svg.latex?f(x&plus;dx)&space;=&space;f(x)&space;&plus;&space;\frac{d^n&space;f}{n!}(x)" title="f(x+dx) = f(x) + \frac{d^n f}{n!}(x)" />
+
+We will call any points x such that d^i f(x) is null for all i "null points" of f.
 
 Note, f is polynomial if and only if n has a maximum, which is the order of the polynomial.
 
 As long as we can always choose dx such that <img src="https://latex.codecogs.com/svg.latex?\widehat{d^n&space;f}&space;=&space;-&space;\widehat{f}" title="\widehat{d^n f} = - \widehat{f}" />, then f has a root if it is polynomial.
 
-Therefore, our task is to construct the algebra so that such a dx always exists.
-
-# Claim
-
-If we add inverses and roots to the complex geometric algebra, all dx in the form of the above exists.
-
-Assume that dx commutes with all elements (that is, there are infinitesimals so small that they're parallel to all elements).  Then
+If we assume that dx commutes with all elements (that is, there are infinitesimals so small that they're parallel to all elements).  Then
 
 <img src="https://latex.codecogs.com/svg.latex?d^n&space;f&space;=&space;dx^n&space;f^{(n)}&space;=&space;f^{(n)}&space;dx^n" title="d^n f = dx^n f^{(n)} = f^{(n)} dx^n" />
 
-and so picking dx such that <img src="https://latex.codecogs.com/svg.latex?f^{(n)}&space;dx^n&space;=&space;dx^n&space;f^{(n)}&space;\propto&space;-f" title="f^{(n)} dx^n = dx^n f^{(n)} \propto -f" /> sends Newton's Method in the correct direction
-
-So we have at least two options for the direction of dx
-
-<img src="https://latex.codecogs.com/svg.latex?dx&space;\propto&space;[-f&space;f^{-(n)}]^{\frac{1}{n}}" title="dx \propto [-f f^{-(n)}]^{\frac{1}{n}}" /> or <img src="https://latex.codecogs.com/svg.latex?dx&space;\propto&space;[-&space;f^{-(n)}&space;f]^{\frac{1}{n}}" title="dx \propto [- f^{-(n)} f]^{\frac{1}{n}}" />
+Therefore, our task is to construct the algebra so that such a dx always exists.
 
 ---
 
-# Non-Distributivity of Inverse
+# Null points
 
-If the inverse distributed, then due to the existence of 0-divisors in the geometric algebra, we would have elements that would multiply together to get 0^{-1}.  Therefore, the inverse cannot distribute, and in general, sums and products of inverse elements cannot be simplified.
+Null vectors singify minima of |f|.  To classify these minima, simply trace out the range that maps to the same value of |f|.
 
----
-
-# Inverses and exponents of null vectors
-
-The only vectors in a complex geometric algebra without inverses and exponents are the null vectors.
-
-If the number of dimensions > 1, then the null vectors form a basis of the complex vector space.
-
-For each null vector <img src="https://latex.codecogs.com/svg.latex?\hat{n}" title="\hat{n}" />, we can formally add <img src="https://latex.codecogs.com/svg.latex?\hat{n}^k" title="\hat{n}^k" /> for arbitrary k of the algebra and demand both that these elements commute with everything as long as k is not 1 and that <img src="https://latex.codecogs.com/svg.latex?\inline&space;\hat{n}^{-2}&space;=&space;0" title="\hat{n}^{-2} = 0" />
+We want to factor p as <img src="https://latex.codecogs.com/svg.latex?\inline&space;p(q)&space;=&space;\prod&space;(a_i&space;q&space;&minus;&space;b_i)" title="p(q) = \prod (a_i q - b_i)" />.  Note that null points only show up when at least one a_i is a null vector.  Therefore, if we run into a null vector, we can follow a
 
 ---
 
@@ -78,9 +62,11 @@ Simply convert every extended blade of the element to a simple blade.
 
 We will write the down converion of x as <img src="https://latex.codecogs.com/svg.latex?\inline&space;\underline{x}" title="\underline{x}" />
 
+By definition of down conversion, we have <img src="https://latex.codecogs.com/svg.latex?\inline&space;\underline{\underline{a}b}&space;=&space;\underline{ab}" title="\underline{\underline{a}b} = \underline{ab}" />
+
 # The Unified Geometric Algebra as the Extended Geometric Algebra Modulo the Down Conversion
 
-Modulo the down conversion, all elements are equivalent to their vector conversion.  Every non-null complex vector has arbitrary exponents (including an inverse) as do any products of 2 non-null complex vectors.
+Modulo the down conversion, all elements are equivalent to their vector conversion.  Every complex vector has arbitrary exponents (including an inverse) as do any products of 2 complex vectors.
 
 By construction, we have <img src="https://latex.codecogs.com/svg.latex?\vec{a}b&space;\equiv&space;ab" title="\vec{a}b \equiv ab" />
 
