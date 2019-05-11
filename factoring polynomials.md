@@ -1,3 +1,5 @@
+None of this actually works.  Was just trying out stuff.
+
 # Factoring Polynomials with an Extended Complex Geometric Algebra
 
 The geometric algebra can be extended so that it is algebraically closed (in the sense that every polynomial can be written in a form that makes the minima of the polynomial, and their locations, obvious).  By adding algebraic closure, we sacrifice a few properties. 
